@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_nginx2_name": {
+            "value": null
+        },
+        "disks_nginx2_OsDisk_1_fbb97d35f721458fad671e02443b0078_externalid": {
+            "value": null
+        },
+        "networkInterfaces_nginx227_externalid": {
+            "value": null
+        }
+    }
+}

@@ -1,0 +1,322 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.14.46.61228",
+      "templateHash": "7161361939333127891"
+    }
+  },
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "westus"
+    },
+    "resourceGroupName": {
+      "type": "string"
+    },
+    "computerName": {
+      "type": "string"
+    },
+    "vmSize": {
+      "type": "string",
+      "defaultValue": "Standard_DS1_v2"
+    },
+    "adminUsername": {
+      "type": "string",
+      "defaultValue": "azureuser"
+    },
+    "adminPasswordOrKey": {
+      "type": "securestring"
+    }
+  },
+  "variables": {
+    "$fxv#0": "I2Nsb3VkLWNvbmZpZwpwYWNrYWdlX3VwZ3JhZGU6IHRydWUKcGFja2FnZXM6CiAgLSBuZ2lueAogIC0gbm9kZWpzCiAgLSBucG0Kd3JpdGVfZmlsZXM6CiAgLSBvd25lcjogd3d3LWRhdGE6d3d3LWRhdGEKICAgIHBhdGg6IC9ldGMvbmdpbngvc2l0ZXMtYXZhaWxhYmxlL2RlZmF1bHQKICAgIGNvbnRlbnQ6IHwKICAgICAgc2VydmVyIHsKICAgICAgICBsaXN0ZW4gODA7CiAgICAgICAgbG9jYXRpb24gLyB7CiAgICAgICAgICBwcm94eV9wYXNzIGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMDsKICAgICAgICAgIHByb3h5X2h0dHBfdmVyc2lvbiAxLjE7CiAgICAgICAgICBwcm94eV9zZXRfaGVhZGVyIFVwZ3JhZGUgJGh0dHBfdXBncmFkZTsKICAgICAgICAgIHByb3h5X3NldF9oZWFkZXIgQ29ubmVjdGlvbiBrZWVwLWFsaXZlOwogICAgICAgICAgcHJveHlfc2V0X2hlYWRlciBIb3N0ICRob3N0OwogICAgICAgICAgcHJveHlfY2FjaGVfYnlwYXNzICRodHRwX3VwZ3JhZGU7CiAgICAgICAgfQogICAgICB9CiAgLSBvd25lcjogYXp1cmV1c2VyOmF6dXJldXNlcgogICAgcGF0aDogL2hvbWUvYXp1cmV1c2VyL215YXBwL2luZGV4LmpzCiAgICBjb250ZW50OiB8CiAgICAgIHZhciBleHByZXNzID0gcmVxdWlyZSgnZXhwcmVzcycpCiAgICAgIHZhciBhcHAgPSBleHByZXNzKCkKICAgICAgdmFyIG9zID0gcmVxdWlyZSgnb3MnKTsKICAgICAgYXBwLmdldCgnLycsIGZ1bmN0aW9uIChyZXEsIHJlcykgewogICAgICAgIHJlcy5zZW5kKCdIZWxsbyBXb3JsZCBmcm9tIGhvc3QgJyArIG9zLmhvc3RuYW1lKCkgKyAnIGF0ICcgKyAobmV3IERhdGUoKS50b0xvY2FsZVN0cmluZygpKSArICcgIScpCiAgICAgIH0pCiAgICAgIGFwcC5saXN0ZW4oMzAwMCwgZnVuY3Rpb24gKCkgewogICAgICAgIGNvbnNvbGUubG9nKCdIZWxsbyB3b3JsZCBhcHAgbGlzdGVuaW5nIG9uIHBvcnQgMzAwMCEnKQogICAgICB9KQpydW5jbWQ6CiAgLSBzZXJ2aWNlIG5naW54IHJlc3RhcnQKICAtIGNkICIvaG9tZS9henVyZXVzZXIvbXlhcHAiCiAgLSBucG0gaW5pdAogIC0gbnBtIGluc3RhbGwgZXhwcmVzcyAteQogIC0gbm9kZWpzIGluZGV4Lmpz"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[parameters('resourceGroupName')]",
+      "location": "[parameters('location')]"
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "linux-vm",
+      "resourceGroup": "[parameters('resourceGroupName')]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[parameters('location')]"
+          },
+          "computerName": {
+            "value": "[parameters('computerName')]"
+          },
+          "vmSize": {
+            "value": "[parameters('vmSize')]"
+          },
+          "adminUsername": {
+            "value": "[parameters('adminUsername')]"
+          },
+          "adminPasswordOrKey": {
+            "value": "[parameters('adminPasswordOrKey')]"
+          },
+          "customData": {
+            "value": "[variables('$fxv#0')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_generator": {
+              "name": "bicep",
+              "version": "0.14.46.61228",
+              "templateHash": "12594930827935197441"
+            }
+          },
+          "parameters": {
+            "location": {
+              "type": "string",
+              "defaultValue": "[resourceGroup().location]"
+            },
+            "computerName": {
+              "type": "string"
+            },
+            "vmSize": {
+              "type": "string",
+              "defaultValue": "Standard_DS1_v2"
+            },
+            "adminUsername": {
+              "type": "string",
+              "defaultValue": "admin"
+            },
+            "adminPasswordOrKey": {
+              "type": "securestring"
+            },
+            "customData": {
+              "type": "string"
+            }
+          },
+          "variables": {
+            "authenticationType": "password",
+            "vmImagePublisher": "canonical",
+            "vmImageOffer": "0001-com-ubuntu-server-jammy",
+            "vmImageSku": "22_04-lts-gen2",
+            "vnetAddressPrefix": "192.168.43.0/27",
+            "vmPublicIPAddressName": "[format('{0}-ip', parameters('computerName'))]",
+            "vmVnetName": "[format('{0}-vnet', parameters('computerName'))]",
+            "vmNsgName": "[format('{0}-nsg', parameters('computerName'))]",
+            "vmNicName": "[format('{0}-nic', parameters('computerName'))]",
+            "vmDiagnosticStorageAccountName": "[format('{0}{1}', replace(parameters('computerName'), '-', ''), uniqueString(resourceGroup().id))]",
+            "shutdownTime": "2200",
+            "shutdownTimeZone": "W. Europe Standard Time",
+            "linuxConfiguration": {
+              "disablePasswordAuthentication": true,
+              "ssh": {
+                "publicKeys": [
+                  {
+                    "path": "[format('/home/{0}/.ssh/authorized_keys', parameters('adminUsername'))]",
+                    "keyData": "[parameters('adminPasswordOrKey')]"
+                  }
+                ]
+              }
+            },
+            "resourceTags": {
+              "vmName": "[parameters('computerName')]"
+            }
+          },
+          "resources": [
+            {
+              "type": "Microsoft.Network/networkSecurityGroups",
+              "apiVersion": "2022-01-01",
+              "name": "[variables('vmNsgName')]",
+              "location": "[parameters('location')]",
+              "tags": "[variables('resourceTags')]",
+              "properties": {
+                "securityRules": [
+                  {
+                    "name": "in-SSH",
+                    "properties": {
+                      "protocol": "Tcp",
+                      "sourcePortRange": "*",
+                      "destinationPortRange": "22",
+                      "sourceAddressPrefix": "*",
+                      "destinationAddressPrefix": "*",
+                      "access": "Allow",
+                      "priority": 1000,
+                      "direction": "Inbound"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "Microsoft.Network/virtualNetworks",
+              "apiVersion": "2022-01-01",
+              "name": "[variables('vmVnetName')]",
+              "location": "[parameters('location')]",
+              "tags": "[variables('resourceTags')]",
+              "properties": {
+                "addressSpace": {
+                  "addressPrefixes": [
+                    "[variables('vnetAddressPrefix')]"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Network/virtualNetworks/subnets",
+              "apiVersion": "2022-01-01",
+              "name": "[format('{0}/{1}', variables('vmVnetName'), 'vm')]",
+              "properties": {
+                "addressPrefix": "[variables('vnetAddressPrefix')]",
+                "networkSecurityGroup": {
+                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('vmNsgName'))]"
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Network/networkSecurityGroups', variables('vmNsgName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('vmVnetName'))]"
+              ]
+            },
+            {
+              "type": "Microsoft.Storage/storageAccounts",
+              "apiVersion": "2019-06-01",
+              "name": "[variables('vmDiagnosticStorageAccountName')]",
+              "location": "[parameters('location')]",
+              "sku": {
+                "name": "Standard_LRS"
+              },
+              "kind": "Storage",
+              "tags": "[variables('resourceTags')]",
+              "properties": {}
+            },
+            {
+              "type": "Microsoft.Network/publicIPAddresses",
+              "apiVersion": "2019-11-01",
+              "name": "[variables('vmPublicIPAddressName')]",
+              "location": "[parameters('location')]",
+              "tags": "[variables('resourceTags')]",
+              "properties": {
+                "publicIPAllocationMethod": "Dynamic",
+                "dnsSettings": {
+                  "domainNameLabel": "[parameters('computerName')]"
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Network/networkInterfaces",
+              "apiVersion": "2022-01-01",
+              "name": "[variables('vmNicName')]",
+              "location": "[parameters('location')]",
+              "tags": "[variables('resourceTags')]",
+              "properties": {
+                "ipConfigurations": [
+                  {
+                    "name": "ipconfig1",
+                    "properties": {
+                      "privateIPAllocationMethod": "Dynamic",
+                      "publicIPAddress": {
+                        "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('vmPublicIPAddressName'))]"
+                      },
+                      "subnet": {
+                        "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('vmVnetName'), 'vm')]"
+                      }
+                    }
+                  }
+                ]
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Network/publicIPAddresses', variables('vmPublicIPAddressName'))]",
+                "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('vmVnetName'), 'vm')]"
+              ]
+            },
+            {
+              "type": "Microsoft.Compute/virtualMachines",
+              "apiVersion": "2022-03-01",
+              "name": "[parameters('computerName')]",
+              "location": "[parameters('location')]",
+              "tags": "[variables('resourceTags')]",
+              "identity": {
+                "type": "SystemAssigned"
+              },
+              "properties": {
+                "hardwareProfile": {
+                  "vmSize": "[parameters('vmSize')]"
+                },
+                "storageProfile": {
+                  "imageReference": {
+                    "publisher": "[variables('vmImagePublisher')]",
+                    "offer": "[variables('vmImageOffer')]",
+                    "sku": "[variables('vmImageSku')]",
+                    "version": "latest"
+                  },
+                  "osDisk": {
+                    "createOption": "FromImage",
+                    "diskSizeGB": 1024
+                  }
+                },
+                "osProfile": {
+                  "computerName": "[parameters('computerName')]",
+                  "adminUsername": "[parameters('adminUsername')]",
+                  "adminPassword": "[parameters('adminPasswordOrKey')]",
+                  "customData": "[base64(parameters('customData'))]",
+                  "linuxConfiguration": "[if(equals(variables('authenticationType'), 'password'), json('null'), variables('linuxConfiguration'))]"
+                },
+                "networkProfile": {
+                  "networkInterfaces": [
+                    {
+                      "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('vmNicName'))]"
+                    }
+                  ]
+                },
+                "diagnosticsProfile": {
+                  "bootDiagnostics": {
+                    "enabled": true,
+                    "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts', variables('vmDiagnosticStorageAccountName')), '2019-06-01').primaryEndpoints.blob]"
+                  }
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('vmDiagnosticStorageAccountName'))]",
+                "[resourceId('Microsoft.Network/networkInterfaces', variables('vmNicName'))]"
+              ]
+            },
+            {
+              "type": "Microsoft.DevTestLab/schedules",
+              "apiVersion": "2018-09-15",
+              "name": "[format('shutdown-computevm-{0}', parameters('computerName'))]",
+              "location": "[parameters('location')]",
+              "tags": "[variables('resourceTags')]",
+              "properties": {
+                "status": "Enabled",
+                "taskType": "ComputeVmShutdownTask",
+                "dailyRecurrence": {
+                  "time": "[variables('shutdownTime')]"
+                },
+                "timeZoneId": "[variables('shutdownTimeZone')]",
+                "notificationSettings": {
+                  "status": "Disabled"
+                },
+                "targetResourceId": "[resourceId('Microsoft.Compute/virtualMachines', parameters('computerName'))]"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Compute/virtualMachines', parameters('computerName'))]"
+              ]
+            }
+          ]
+        }
+      },
+      "dependsOn": [
+        "[subscriptionResourceId('Microsoft.Resources/resourceGroups', parameters('resourceGroupName'))]"
+      ]
+    }
+  ]
+}

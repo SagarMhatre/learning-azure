@@ -1,0 +1,845 @@
+For more information on the Azure Serial Console, see <https://aka.ms/serialconsolelinux>.
+Connecting to console of be2   □ ■ □
++-----------------------------------------------+
+Connected to the serial port of the VM.
+If no login prompt is displayed, press ENTER.
++-----------------------------------------------+
+
+
+ 0.667742] rcu: Hierarchical RCU implementation.
+[    0.673075] rcu:     RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+[    0.680594]  Rude variant of Tasks RCU enabled.
+[    0.685660]  Tracing variant of Tasks RCU enabled.
+[    0.690166] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.698719] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.710592] Using NULL legacy PIC
+[    0.714152] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 0
+[    0.721313] Console: colour dummy device 80x25
+[    0.725621] printk: console [tty1] enabled
+[    0.730003] printk: console [ttyS0] enabled
+[    0.730003] printk: console [ttyS0] enabled
+[    0.738835] printk: bootconsole [earlyser0] disabled
+[    0.738835] printk: bootconsole [earlyser0] disabled
+[    0.750440] ACPI: Core revision 20210730
+[    0.755144] Failed to register legacy timer interrupt
+[    0.760809] APIC: Switch to symmetric I/O mode setup
+[    0.764898] Hyper-V: Using IPI hypercalls
+[    0.769155] Hyper-V: Using enlightened APIC (xapic mode)
+[    0.769284] Calibrating delay loop (skipped), value calculated using timer frequency.. 4589.37 BogoMIPS (lpj=9178756)
+[    0.773279] pid_max: default: 32768 minimum: 301
+[    0.773279] LSM: Security Framework initializing
+[    0.773279] landlock: Up and running.
+[    0.773279] Yama: becoming mindful.
+[    0.773279] AppArmor: AppArmor initialized
+[    0.773279] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.773279] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Poking KASLR using RDRAND RDTSC...
+[    0.773279] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.773279] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.773279] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.773279] Spectre V2 : Mitigation: Retpolines
+[    0.773279] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.773279] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+[    0.773279] Speculative Store Bypass: Vulnerable
+[    0.773279] MDS: Mitigation: Clear CPU buffers
+[    0.773279] TAA: Mitigation: Clear CPU buffers
+[    0.773279] MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+[    0.773279] Freeing SMP alternatives memory: 40K
+[    0.773279] smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz (family: 0x6, model: 0x4f, stepping: 0x1)
+[    0.773458] Performance Events: unsupported p6 CPU model 79 no PMU driver, software events only.
+[    0.777338] rcu: Hierarchical SRCU implementation.
+[    0.781636] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.785432] smp: Bringing up secondary CPUs ...
+[    0.789287] smp: Brought up 1 node, 1 CPU
+[    0.793278] smpboot: Max logical packages: 1
+[    0.797285] smpboot: Total of 1 processors activated (4589.37 BogoMIPS)
+[    0.801555] devtmpfs: initialized
+[    0.804767] x86/mm: Memory block size: 128MB
+[    0.805507] ACPI: PM: Registering ACPI NVS region [mem 0x3fffb000-0x3fffefff] (16384 bytes)
+[    0.809336] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.813292] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.817353] pinctrl core: initialized pinctrl subsystem
+[    0.822083] PM: RTC time: 05:23:54, date: 2023-02-22
+[    0.825406] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.829408] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.833320] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.837345] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.841293] audit: initializing netlink subsys (disabled)
+[    0.845449] thermal_sys: Registered thermal governor 'fair_share'
+[    0.845451] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.849288] audit: type=2000 audit(1677043434.076:1): state=initialized audit_enabled=0 res=1
+[    0.857288] thermal_sys: Registered thermal governor 'step_wise'
+[    0.857289] thermal_sys: Registered thermal governor 'user_space'
+[    0.861285] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.865298] EISA bus registered
+[    0.873019] cpuidle: using governor ladder
+[    0.873285] cpuidle: using governor menu
+[    0.877075] ACPI: bus type PCI registered
+[    0.877284] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.882977] Kprobes globally optimized
+[    0.885412] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.889290] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.894107] ACPI: Added _OSI(Module Device)
+[    0.897319] ACPI: Added _OSI(Processor Device)
+[    0.901315] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.905293] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.909291] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.913285] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.917286] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.931541] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.934588] ACPI: Interpreter enabled
+[    0.937296] ACPI: PM: (supports S0 S5)
+[    0.941284] ACPI: Using IOAPIC for interrupt routing
+[    0.945302] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.949284] PCI: Using E820 reservations for host bridge windows
+[    0.953397] ACPI: Enabled 1 GPEs in block 00 to 0F
+[    0.958453] iommu: Default domain type: Translated 
+[    0.961285] iommu: DMA domain TLB invalidation policy: lazy mode 
+[    0.965487] SCSI subsystem initialized
+[    0.969374] vgaarb: loaded
+[    0.972243] ACPI: bus type USB registered
+[    0.973310] usbcore: registered new interface driver usbfs
+[    0.977296] usbcore: registered new interface driver hub
+[    0.981293] usbcore: registered new device driver usb
+[    0.985303] pps_core: LinuxPPS API ver. 1 registered
+[    0.989284] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.993306] PTP clock support registered
+[    0.997264] EDAC MC: Ver: 3.0.0
+[    0.997370] Registered efivars operations
+[    1.001510] hv_vmbus: Vmbus version:4.0
+[    1.005785] NetLabel: Initializing
+[    1.009190] NetLabel:  domain hash size = 128
+[    1.009310] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.013304] NetLabel:  unlabeled traffic allowed by default
+[    1.017334] PCI: Using ACPI for IRQ routing
+[    1.021283] PCI: System does not support PCI
+[    1.025442] clocksource: Switched to clocksource hyperv_clocksource_tsc_page
+[    1.042984] VFS: Disk quotas dquot_6.6.0
+[    1.052189] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.059771] AppArmor: AppArmor Filesystem Enabled
+[    1.065424] pnp: PnP ACPI init
+[    1.069411] pnp: PnP ACPI: found 3 devices
+[    1.080492] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    1.090692] NET: Registered PF_INET protocol family
+[    1.096066] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    1.105076] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    1.112516] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.120899] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.129066] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    1.136566] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.143552] MPTCP token hash table entries: 1024 (order: 2, 24576 bytes, linear)
+[    1.152102] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    1.158954] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    1.166381] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.172210] NET: Registered PF_XDP protocol family
+[    1.176787] PCI: CLS 0 bytes, default 64
+[    1.181175] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    1.188341] software IO TLB: mapped [mem 0x0000000039400000-0x000000003d400000] (64MB)
+[    1.197224] Initialise system trusted keyrings
+[    1.202611] Key type blacklist registered
+[    1.206832] workingset: timestamp_bits=36 max_order=18 bucket_order=0
+[    1.215071] zbud: loaded
+[    1.218672] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.224983] fuse: init (API version 7.34)
+[    1.229953] integrity: Platform Keyring initialized
+[    1.244310] Key type asymmetric registered
+[    1.248801] Asymmetric key parser 'x509' registered
+[    1.254094] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    1.262076] io scheduler mq-deadline registered
+[    1.266900] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    1.274359] hv_vmbus: registering driver hv_pci
+[    1.279025] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    1.321082] 00:00: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    1.361462] 00:01: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+[    1.370005] Linux agpgart interface v0.103
+[    1.375949] loop: module loaded
+[    1.379773] hv_vmbus: registering driver hv_storvsc
+[    1.385397] tun: Universal TUN/TAP device driver, 1.6
+[    1.391138] PPP generic driver version 2.4.2
+[    1.396041] VFIO - User Level meta-driver version: 0.3
+[    1.401794] i8042: PNP: No PS/2 controller found.
+[    1.406995] mousedev: PS/2 mouse device common for all mice
+[    1.415421] scsi host0: storvsc_host_t
+[    1.420516] scsi host1: storvsc_host_t
+[    1.427123] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    1.435807] rtc_cmos 00:02: registered as rtc0
+[    1.441704] rtc_cmos 00:02: setting system clock to 2023-02-22T05:23:55 UTC (1677043435)
+[    1.450466] rtc_cmos 00:02: alarms up to one month, 114 bytes nvram
+[    1.457530] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    1.471154] device-mapper: uevent: version 1.0.3
+[    1.476425] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+[    1.486438] platform eisa.0: Probing EISA bus 0
+[    1.491687] scsi 0:0:0:1: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    1.500478] platform eisa.0: EISA: Detected 0 cards
+[    1.505993] intel_pstate: CPU model not supported
+[    1.511015] EFI Variables Facility v0.08 2004-May-17
+[    1.517205] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 0
+[    1.533542] hv_utils: Registering HyperV Utility Driver
+[    1.539078] hv_vmbus: registering driver hv_utils
+[    1.544607] hv_vmbus: registering driver hv_balloon
+[    1.550699] hv_utils: Heartbeat IC version 3.0
+[    1.555918] drop_monitor: Initializing network drop monitor service
+[    1.562618] hv_utils: Shutdown IC version 3.2
+[    1.562624] hv_utils: TimeSync IC version 4.0
+[    1.572977] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    1.580287] NET: Registered PF_INET6 protocol family
+[    1.586109] Segment Routing with IPv6
+[    1.590857] In-situ OAM (IOAM) with IPv6
+[    1.595913] NET: Registered PF_PACKET protocol family
+[    1.601009] Key type dns_resolver registered
+[    1.606094] No MBM correction factor available
+[    1.610600] IPI shorthand broadcast: enabled
+[    1.614970] sched_clock: Marking stable (1566896200, 48005400)->(1936969800, -322068200)
+[    1.623653] registered taskstats version 1
+[    1.628349] Loading compiled-in X.509 certificates
+[    1.633681] Loaded X.509 cert 'Build time autogenerated kernel key: 41832d923c93be2bb4145a281b4d522b79475235'
+[    1.644607] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.654978] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.665948] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.674390] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.684902] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.695743] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.706481] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.717274] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.728053] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.738727] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.750275] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.763281] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.769357] zswap: loaded using pool lzo/zbud
+[    1.774053] sd 0:0:0:1: Attached scsi generic sg1 type 0
+[    1.780070] Key type .fscrypt registered
+[    1.784122] Key type fscrypt-provisioning registered
+[    1.789769] Key type encrypted registered
+[    1.794100] sr 0:0:0:2: [sr0] scsi-1 drive
+[    1.798825] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    1.804568] sd 0:0:0:0: [sda] 62916608 512-byte logical blocks: (32.2 GB/30.0 GiB)
+[    1.812432] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    1.817542] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.823709] sd 0:0:0:1: [sdb] 8388608 512-byte logical blocks: (4.29 GB/4.00 GiB)
+[    1.831389] sd 0:0:0:1: [sdb] 4096-byte physical blocks
+[    1.838001] integrity: Loading X.509 certificate: UEFI:db
+[    1.844093] integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+[    1.855264] sd 0:0:0:0: [sda] Write Protect is off
+[    1.860552] sd 0:0:0:1: [sdb] Write Protect is off
+[    1.865936] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    1.873180] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.883711] sd 0:0:0:1: [sdb] Write cache: disabled, read cache: enabled, supports DPO and FUA
+[    1.893136] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    1.899809] integrity: Loaded X.509 cert 'Canonical Ltd. Master Certificate Authority: ad91990bc22ab1f517048c23b6655a268e345a63'
+[    1.912291] ima: No TPM chip found, activating TPM-bypass!
+[    1.918182] Loading compiled-in module X.509 certificates
+[    1.924859] Loaded X.509 cert 'Build time autogenerated kernel key: 41832d923c93be2bb4145a281b4d522b79475235'
+[    1.935870] ima: Allocated hash algorithm: sha1
+[    1.955501] ima: No architecture policies found
+[    1.960156] evm: Initialising EVM extended attributes:
+[    1.965520] evm: security.selinux
+[    1.969031] evm: security.SMACK64
+[    1.972329] evm: security.SMACK64EXEC
+[    1.976060] evm: security.SMACK64TRANSMUTE
+[    1.980567] evm: security.SMACK64MMAP
+[    1.984039] evm: security.apparmor
+[    1.987744] evm: security.ima
+[    1.990921] evm: security.capability
+[    1.994494] evm: HMAC attrs: 0x1
+[    1.998399] PM:   Magic number: 11:977:365
+[    2.002770] RAS: Correctable Errors collector initialized.
+[    2.015571]  sdb: sdb1
+[    2.018409] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    2.025955] GPT:4612095 != 62916607
+[    2.029681] GPT:Alternate GPT header not at the end of the disk.
+[    2.035684] GPT:4612095 != 62916607
+[    2.039616] GPT: Use GNU Parted to correct GPT errors.
+[    2.045339]  sda: sda1 sda14 sda15
+[    2.061598] sd 0:0:0:1: [sdb] Attached SCSI disk
+[    2.066357] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.071241] md: Waiting for all devices to be available before autodetect
+[    2.078739] md: If you don't use raid, use raid=noautodetect
+[    2.084801] md: Autodetecting RAID arrays.
+[    2.089080] md: autorun ...
+[    2.091987] md: ... autorun DONE.
+[    2.098410] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    2.107868] VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+[    2.115301] devtmpfs: mounted
+[    2.120021] Freeing unused decrypted memory: 2036K
+[    2.125703] Freeing unused kernel image (initmem) memory: 2968K
+[    2.133293] Write protecting the kernel read-only data: 30720k
+[    2.140672] Freeing unused kernel image (text/rodata gap) memory: 2036K
+[    2.148295] Freeing unused kernel image (rodata/data gap) memory: 1948K
+[    2.201974] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.209836] x86/mm: Checking user space page tables
+[    2.261569] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.268815] Run /sbin/init as init process
+[    2.557987] systemd[1]: Inserted module 'autofs4'
+[    2.595337] systemd[1]: systemd 245.4-4ubuntu3.19 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    2.619394] systemd[1]: Detected virtualization microsoft.
+[    2.626223] systemd[1]: Detected architecture x86-64.
+
+Welcome to Ubuntu 20.04.5 LTS!
+
+[    2.639910] systemd[1]: Set hostname to <ubuntu>.
+[    2.646032] systemd[1]: Initializing machine ID from random generator.
+[    2.654290] systemd[1]: Installed transient /etc/machine-id file.
+[    3.204908] systemd[1]: Unnecessary job for /sys/devices/virtual/misc/vmbus!hv_fcopy was removed.
+[    3.214313] systemd[1]: Unnecessary job for /sys/devices/virtual/misc/vmbus!hv_vss was removed.
+[    3.225272] systemd[1]: Created slice system-modprobe.slice.
+[  OK  ] Created slice system-modprobe.slice.
+[    3.237045] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[  OK  ] Created slice system-serial\x2dgetty.slice.
+[    3.250350] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[  OK  ] Created slice system-systemd\x2dfsck.slice.
+[    3.262177] systemd[1]: Created slice User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[    3.272983] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[  OK  ] Started Forward Password R…uests to Wall Directory Watch.
+[    3.287669] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[  OK  ] Set up automount Arbitrary…s File System Automount Point.
+[    3.304923] systemd[1]: Reached target User and Group Name Lookups.
+[  OK  ] Reached target User and Group Name Lookups.
+[    3.316338] systemd[1]: Reached target Slices.
+[  OK  ] Reached target Slices.
+[    3.325488] systemd[1]: Reached target Mounting snaps.
+[  OK  ] Reached target Mounting snaps.
+[    3.336743] systemd[1]: Reached target Swap.
+[  OK  ] Reached target Swap.
+[    3.346575] systemd[1]: Reached target System Time Set.
+[  OK  ] Reached target System Time Set.
+[    3.356311] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+[    3.368991] systemd[1]: Listening on LVM2 poll daemon socket.
+[  OK  ] Listening on LVM2 poll daemon socket.
+[    3.381130] systemd[1]: Listening on multipathd control socket.
+[  OK  ] Listening on multipathd control socket.
+[    3.392202] systemd[1]: Listening on Syslog Socket.
+[  OK  ] Listening on Syslog Socket.
+[    3.402506] systemd[1]: Listening on fsck to fsckd communication Socket.
+[  OK  ] Listening on fsck to fsckd communication Socket.
+[    3.415771] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[  OK  ] Listening on initctl Compatibility Named Pipe.
+[    3.429271] systemd[1]: Listening on Journal Audit Socket.
+[  OK  ] Listening on Journal Audit Socket.
+[    3.440983] systemd[1]: Listening on Journal Socket (/dev/log).
+[  OK  ] Listening on Journal Socket (/dev/log).
+[    3.453370] systemd[1]: Listening on Journal Socket.
+[  OK  ] Listening on Journal Socket.
+[    3.463488] systemd[1]: Listening on Network Service Netlink Socket.
+[  OK  ] Listening on Network Service Netlink Socket.
+[    3.475699] systemd[1]: Listening on udev Control Socket.
+[  OK  ] Listening on udev Control Socket.
+[    3.486332] systemd[1]: Listening on udev Kernel Socket.
+[  OK  ] Listening on udev Kernel Socket.
+[    3.497470] systemd[1]: Mounting Huge Pages File System...
+         Mounting Huge Pages File System...
+[    3.511718] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[    3.526745] systemd[1]: Mounting Kernel Debug File System...
+         Mounting Kernel Debug File System...
+[    3.540043] systemd[1]: Mounting Kernel Trace File System...
+         Mounting Kernel Trace File System...
+[    3.554492] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[    3.577516] systemd[1]: Starting Set the console keyboard layout...
+         Starting Set the console keyboard layout...
+[    3.606311] systemd[1]: Starting Create list of static device nodes for the current kernel...
+         Starting Create list of st…odes for the current kernel...
+[    3.658155] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+         Starting Monitoring of LVM…meventd or progress polling...
+[    3.705540] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+         Starting Load Kernel Module chromeos_pstore...
+[    3.733895] systemd[1]: Starting Load Kernel Module drm...
+         Starting Load Kernel Module drm...
+[    3.749863] systemd[1]: Starting Load Kernel Module efi_pstore...
+         Starting Load Kernel Module efi_pstore...
+[    3.766091] systemd[1]: Starting Load Kernel Module pstore_blk...
+         Starting Load Kernel Module pstore_blk...[    3.794908] pstore: Using crash dump compression: deflate
+
+[    3.804841] systemd[1]: Starting Load Kernel Module pstore_zone...
+[    3.812046] pstore: Registered efi as persistent store backend
+         Starting Load Kernel Module pstore_zone...
+[    3.829134] systemd[1]: Starting Load Kernel Module ramoops...
+         Starting Load Kernel Module ramoops...
+[    3.842283] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[    3.854413] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[    3.864909] systemd[1]: Starting File System Check on Root Device...
+         Starting File System Check on Root Device...
+[    3.890030] systemd[1]: Starting Load Kernel Modules...
+         Starting Load Kernel Modules...
+[    3.914278] systemd[1]: Starting udev Coldplug all Devices...
+         Starting udev Coldplug all Devices...
+[    3.941449] systemd[1]: Starting Uncomplicated firewall...
+         Starting Uncomplicated firewall...
+[    3.958208] systemd[1]: Started Journal Service.
+[  OK  ] Started Journal Service.
+[  OK  ] Mounted Huge Pages File System.
+[  OK  ] Mounted POSIX Message Queue File System.
+[  OK  ] Mounted Kernel Debug File System.
+[  OK  ] Mounted Kernel Trace File System.
+[  OK  ] Finished Set the console keyboard layout.
+[  OK  ] Finished Create list of st… nodes for the current kernel.
+[  OK  ] Finished Load Kernel Module chromeos_pstore.
+[  OK  ] Finished Load Kernel Module drm.
+[  OK  ] Finished Load Kernel Module efi_pstore.
+[  OK  ] Finished Load Kernel Module pstore_blk.
+[  OK  ] Finished Load Kernel Module pstore_zone.
+[  OK  ] Finished Load Kernel Module ramoops.
+[  OK  ] Finished File System Check on Root Device.
+[  OK  ] Finished Load Kernel Modules.
+[  OK  ] Finished Uncomplicated firewall.
+         Mounting FUSE Control File System...
+         Mounting Kernel Configuration File System...
+[  OK  ] Started File System Check Daemon to report status.
+         Starting Remount Root and Kernel File Systems...
+         Starting Apply Kernel Variables...
+[  OK  ] Finished udev Coldplug all Devices.
+[  OK  ] Mounted FUSE Control File System.
+[  OK  ] Mounted Kernel Configuration File System.
+         Starting udev Wait for Complete Device Initialization...
+[  OK  ] Finished Apply Kernel Variables.
+[  OK  ] Finished Remount Root and Kernel File Systems.
+         Starting Flush Journal to Persistent Storage...
+         Starting Load/Save Random Seed...
+         Starting Create System Users...
+[  OK  ] Finished Load/Save Random Seed.
+[  OK  ] Finished Flush Journal to Persistent Storage.
+[  OK  ] Finished Create System Users.
+         Starting Create Static Device Nodes in /dev...
+[  OK  ] Finished Create Static Device Nodes in /dev.
+         Starting udev Kernel Device Manager...
+[  OK  ] Started udev Kernel Device Manager.
+[  OK  ] Started Dispatch Password …ts to Console Directory Watch.
+[  OK  ] Reached target Local Encrypted Volumes.
+[  OK  ] Found device /dev/ttyS0.
+[  OK  ] Found device /sys/devices/virtual/misc/vmbus!hv_kvp.
+[  OK  ] Listening on Load/Save RF …itch Status /dev/rfkill Watch.
+[  OK  ] Started Hyper-V KVP Protocol Daemon.
+         Mounting Arbitrary Executable File Formats File System...
+[  OK  ] Mounted Arbitrary Executable File Formats File System.
+[  OK  ] Found device Virtual_Disk UEFI.
+[  OK  ] Finished udev Wait for Complete Device Initialization.
+         Starting Device-Mapper Multipath Device Controller...
+[  OK  ] Finished Monitoring of LVM… dmeventd or progress polling.
+[  OK  ] Started Device-Mapper Multipath Device Controller.
+[  OK  ] Reached target Local File Systems (Pre).
+         Mounting Mount unit for core20, revision 1822...
+         Mounting Mount unit for lxd, revision 24061...
+         Mounting Mount unit for snapd, revision 17950...
+         Starting File System Check…/dev/disk/by-uuid/A840-B1B6...
+[  OK  ] Mounted Mount unit for core20, revision 1822.
+[  OK  ] Mounted Mount unit for lxd, revision 24061.
+[  OK  ] Mounted Mount unit for snapd, revision 17950.
+[  OK  ] Reached target Mounted snaps.
+[  OK  ] Finished File System Check…n /dev/disk/by-uuid/A840-B1B6.
+         Mounting /boot/efi...
+[  OK  ] Mounted /boot/efi.
+[  OK  ] Reached target Local File Systems.
+         Starting Load AppArmor profiles...
+         Starting Set console font and keymap...
+         Starting Create final runt…dir for shutdown pivot root...
+         Starting Tell Plymouth To Write Out Runtime Data...
+         Starting Commit a transient machine-id on disk...
+         Starting Create Volatile Files and Directories...
+[  OK  ] Finished Set console font and keymap.
+[  OK  ] Finished Create final runt…e dir for shutdown pivot root.
+[  OK  ] Finished Tell Plymouth To Write Out Runtime Data.
+[  OK  ] Finished Commit a transient machine-id on disk.
+[  OK  ] Finished Create Volatile Files and Directories.
+         Starting Update UTMP about System Boot/Shutdown...
+[  OK  ] Finished Update UTMP about System Boot/Shutdown.
+[  OK  ] Finished Load AppArmor profiles.
+         Starting Load AppArmor pro…managed internally by snapd...
+         Starting Initial cloud-init job (pre-networking)...
+[    8.587841] sh[455]: + [ -e /var/lib/cloud/instance/obj.pkl ]
+[    8.599550] sh[455]: + exit 0
+[   11.226847] cloud-init[469]: Cloud-init v. 22.4.2-0ubuntu0~20.04.2 running 'init-local' at Wed, 22 Feb 2023 05:24:04 +0000. Up 9.86 seconds.
+[  OK  ] Finished Initial cloud-init job (pre-networking).
+[  OK  ] Reached target Network (Pre).
+         Starting Network Service...
+[  OK  ] Started Network Service.
+         Starting Wait for Network to be Configured...
+         Starting Network Name Resolution...
+[  OK  ] Started Network Name Resolution.
+[  OK  ] Reached target Network.
+[  OK  ] Reached target Host and Network Name Lookups.
+[  OK  ] Finished Load AppArmor pro…s managed internally by snapd.
+[  OK  ] Finished Wait for Network to be Configured.
+         Starting Initial cloud-ini… (metadata service crawler)...
+[   13.859053] cloud-init[544]: Cloud-init v. 22.4.2-0ubuntu0~20.04.2 running 'init' at Wed, 22 Feb 2023 05:24:07 +0000. Up 13.67 seconds.
+[   13.876294] cloud-init[544]: ci-info: +++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++++
+[   13.891993] cloud-init[544]: ci-info: +--------+------+-----------------------------+-----------------+--------+-------------------+
+[   13.901833] cloud-init[544]: ci-info: | Device |  Up  |           Address           |       Mask      | Scope  |     Hw-Address    |
+[   13.913737] cloud-init[544]: ci-info: +--------+------+-----------------------------+-----------------+--------+-------------------+
+[   13.923682] cloud-init[544]: ci-info: |  eth0  | True |         192.168.43.6        | 255.255.255.224 | global | 00:22:48:04:a4:84 |
+[   13.934282] cloud-init[544]: ci-info: |  eth0  | True | fe80::222:48ff:fe04:a484/64 |        .        |  link  | 00:22:48:04:a4:84 |
+[   13.943388] cloud-init[544]: ci-info: |   lo   | True |          127.0.0.1          |    255.0.0.0    |  host  |         .         |
+[   13.952998] cloud-init[544]: ci-info: |   lo   | True |           ::1/128           |        .        |  host  |         .         |
+[   13.962266] cloud-init[544]: ci-info: +--------+------+-----------------------------+-----------------+--------+-------------------+
+[   13.971765] cloud-init[544]: ci-info: ++++++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++++++
+[   13.981313] cloud-init[544]: ci-info: +-------+-----------------+--------------+-----------------+-----------+-------+
+[   13.990195] cloud-init[544]: ci-info: | Route |   Destination   |   Gateway    |     Genmask     | Interface | Flags |
+[   13.998750] cloud-init[544]: ci-info: +-------+-----------------+--------------+-----------------+-----------+-------+
+[   14.007447] cloud-init[544]: ci-info: |   0   |     0.0.0.0     | 192.168.43.1 |     0.0.0.0     |    eth0   |   UG  |
+[   14.016647] cloud-init[544]: ci-info: |   1   |  168.63.129.16  | 192.168.43.1 | 255.255.255.255 |    eth0   |  UGH  |
+[   14.024747] cloud-init[544]: ci-info: |   2   | 169.254.169.254 | 192.168.43.1 | 255.255.255.255 |    eth0   |  UGH  |
+[   14.033702] cloud-init[544]: ci-info: |   3   |   192.168.43.0  |   0.0.0.0    | 255.255.255.224 |    eth0   |   U   |
+[   14.042844] cloud-init[544]: ci-info: +-------+-----------------+--------------+-----------------+-----------+-------+
+[   14.052387] cloud-init[544]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[   14.058723] cloud-init[544]: ci-info: +-------+-------------+---------+-----------+-------+
+[   14.065591] cloud-init[544]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[   14.073069] cloud-init[544]: ci-info: +-------+-------------+---------+-----------+-------+
+[   14.081190] cloud-init[544]: ci-info: |   1   |  fe80::/64  |    ::   |    eth0   |   U   |
+[   14.087791] cloud-init[544]: ci-info: |   3   |    local    |    ::   |    eth0   |   U   |
+[   14.094398] cloud-init[544]: ci-info: |   4   |  multicast  |    ::   |    eth0   |   U   |
+[   14.100984] cloud-init[544]: ci-info: +-------+-------------+---------+-----------+-------+
+[   14.108047] cloud-init[544]: 2023-02-22 05:24:08,166 - schema.py[WARNING]: Invalid cloud-config provided: Please run 'sudo cloud-init schema --system' to see the schema errors.
+[   14.238952] cloud-init[544]: 2023-02-22 05:24:08,546 - util.py[WARNING]: Running module write-files (<module 'cloudinit.config.cc_write_files' from '/usr/lib/python3/dist-packages/cloudinit/config/cc_write_files.py'>) failed
+[   17.590395] cloud-init[544]: Generating public/private rsa key pair.
+[   17.602022] cloud-init[544]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+[   17.614204] cloud-init[544]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+[   17.630369] cloud-init[544]: The key fingerprint is:
+[   17.638146] cloud-init[544]: SHA256:LdGAbtDyVFlMET3vEv46BLqC3mZRjPVU/XPEhXUQwb0 root@be2
+[   17.653934] cloud-init[544]: The key's randomart image is:
+[   17.662098] cloud-init[544]: +---[RSA 3072]----+
+[   17.670045] cloud-init[544]: |     . oo===.o+O=|
+[   17.678047] cloud-init[544]: |    o + ooo o + =|
+[   17.686396] cloud-init[544]: |     * +.o.  o o.|
+[   17.697395] cloud-init[544]: |      = ooo . .Eo|
+[   17.704743] cloud-init[544]: |     . .S..o o  o|
+[FAILED] Failed to start Initial cl…ob (metadata service crawler).
+[   17.717534] cloud-init[544]: |      . ..  + .  |
+See 'systemctl status cloud-init.service' for details.
+[   17.726575] cloud-init[544]: |     . . . . o   |
+[   17.731373] cloud-init[544]: |    ..+ .   . .  |
+[  OK  ] Reached target Cloud-config availability.
+[   17.740540] cloud-init[544]: |   ..o..    .o   |
+[   17.744804] cloud-init[544]: +----[SHA256]-----+
+[  OK  ] Reached target Network is Online.
+[   17.753678] cloud-init[544]: Generating public/private dsa key pair.
+[  OK  ] Reached target System Initialization.
+[   17.765175] cloud-init[544]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+[   17.778385] cloud-init[544]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub
+[  OK  ] Started Ubuntu Advantage Timer for running repeated jobs.
+[   17.791051] cloud-init[544]: The key fingerprint is:
+[  OK  ] Reached target Paths.
+[   17.799843] cloud-init[544]: SHA256:5rTjLVBM6IPfxJ+veRvG1CL6VpnCy8rmg+mWeSXuSnE root@be2
+[  OK  ] Listening on cloud-init hotplug hook socket.
+[   17.815367] cloud-init[544]: The key's randomart image is:
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+[   17.831035] cloud-init[544]: +---[DSA 1024]----+
+[   17.835565] cloud-init[544]: |       .         |
+[  OK  ] Listening on Open-iSCSI iscsid Socket.
+[   17.843761] cloud-init[544]: |      . .        |
+[   17.850075] cloud-init[544]: |     o +         |
+         Starting Socket activation for snappy daemon.
+[   17.858531] cloud-init[544]: |    . o =    .   |
+[  OK  ] Listening on UUID daemon activation socket.
+[   17.868849] cloud-init[544]: |     ..=Eo..oo.  |
+[   17.874077] cloud-init[544]: |      o*oo*++.   |
+[  OK  ] Reached target Remote File Systems (Pre).
+[   17.884413] cloud-init[544]: |      .B=+ =+    |
+[   17.889178] cloud-init[544]: |     .*o*++oo.   |
+[  OK  ] Reached target Remote File Systems.
+[   17.897900] cloud-init[544]: |     oo**==o..   |
+         Starting Availability of block devices...
+[   17.910733] cloud-init[544]: +----[SHA256]-----+
+[  OK  ] Listening on Socket activation for snappy daemon.
+[   17.921772] cloud-init[544]: Generating public/private ecdsa key pair.
+[  OK  ] Finished Availability of block devices.
+[   17.932145] cloud-init[544]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+[  OK  ] Reached target Sockets.
+[   17.943491] cloud-init[544]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+[  OK  ] Reached target Basic System.
+[   17.955122] cloud-init[544]: The key fingerprint is:
+         Starting Accounts Service...
+[   17.965842] cloud-init[544]: SHA256:7ZNCJBk7oK7UehRUSPP8Q0JRqYD/OqEsFxvCiwlaSD0 root@be2
+         Starting LSB: automatic crash report generation...
+[   17.985931] cloud-init[544]: The key's randomart image is:
+         Starting Deferred execution scheduler...
+[   18.002618] cloud-init[544]: +---[ECDSA 256]---+
+[   18.011466] cloud-init[544]: |  o++++..        |
+         Starting chrony, an NTP client/server...
+[   18.026990] cloud-init[544]: | ..+=. =         |
+[  OK  ] Started Regular background program processing daemon.
+[   18.043723] cloud-init[544]: |  +..+*..        |
+[   18.058976] cloud-init[544]: | o.E..++ .       |
+[  OK  ] Started D-Bus System Message Bus.
+[   18.070739] cloud-init[544]: |oo.oo  oS .      |
+[   18.085185] cloud-init[544]: |=o*. . ... .     |
+[  OK  ] Started Save initial kernel messages after boot.
+[   18.099493] cloud-init[544]: |*=o=o   . +      |
+[   18.107056] cloud-init[544]: |=++o     . .     |
+         Starting Remove Stale Onli…t4 Metadata Check Snapshots...
+[   18.128253] cloud-init[544]: |..  .            |
+[   18.154878] cloud-init[544]: +----[SHA256]-----+
+         Starting Record successful boot for GRUB...
+[   18.170919] cloud-init[544]: Generating public/private ed25519 key pair.
+[   18.185344] cloud-init[544]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+[  OK  ] Started irqbalance daemon.
+[   18.204273] cloud-init[544]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+         Starting Dispatcher daemon for systemd-networkd...
+[   18.220789] cloud-init[544]: The key fingerprint is:
+         Starting Authorization Manager...
+[   18.238351] cloud-init[544]: SHA256:iYkEd1cjNopQogwV9InpA9hw6Ilk8+X9/IPhfgPFmXk root@be2
+         Starting Pollinate to seed…udo random number generator...
+[   18.279965] cloud-init[544]: The key's randomart image is:
+[   18.296340] cloud-init[544]: +--[ED25519 256]--+
+         Starting System Logging Service...
+[   18.313664] cloud-init[544]: |o+Ooo . =.o      |
+         Starting Secure Boot updates for DB and DBX...
+[   18.333437] cloud-init[544]: |=O O = + o .     |
+[  OK  ] Reached target Login Prompts (Pre).
+[   18.350293] cloud-init[544]: |O.B B o   . +    |
+[   18.358893] cloud-init[544]: |.= o o + . * E   |
+         Starting Snap Daemon...
+[   18.373690] cloud-init[544]: |  o . o S . .    |
+         Starting Login Service...
+[   18.401602] cloud-init[544]: |   .     =       |
+         Starting Permit User Sessions...
+[   18.417829] cloud-init[544]: |        . =      |
+[   18.434180] cloud-init[544]: |         o =     |
+[   18.442078] cloud-init[544]: |        ... o    |
+[   18.449462] cloud-init[544]: +----[SHA256]-----+
+         Starting Disk Manager...
+[  OK  ] Started Azure Linux Agent.
+[  OK  ] Started Deferred execution scheduler.
+[  OK  ] Finished Remove Stale Onli…ext4 Metadata Check Snapshots.
+[  OK  ] Finished Permit User Sessions.
+[  OK  ] Started System Logging Service.
+[  OK  ] Started chrony, an NTP client/server.
+[  OK  ] Started Authorization Manager.
+[  OK  ] Finished Record successful boot for GRUB.
+[  OK  ] Started Accounts Service.
+[  OK  ] Finished Secure Boot updates for DB and DBX.
+[  OK  ] Started LSB: automatic crash report generation.
+[  OK  ] Started Login Service.
+[  OK  ] Reached target System Time Synchronized.
+[  OK  ] Started Daily apt download activities.
+[  OK  ] Started Daily apt upgrade and clean activities.
+[  OK  ] Started Periodic ext4 Onli…ata Check for All Filesystems.
+[  OK  ] Started Discard unused blocks once a week.
+[  OK  ] Started Refresh fwupd metadata regularly.
+[  OK  ] Started Daily rotation of log files.
+[  OK  ] Started Daily man-db regeneration.
+[  OK  ] Started Message of the Day.
+[  OK  ] Reached target Timers.
+         Starting GRUB failed boot detection...
+         Starting Hold until boot process finishes up...
+         Starting Terminate Plymouth Boot Screen...
+         Starting Modem Manager...
+[  OK  ] Started Unattended Upgrades Shutdown.
+[  OK  ] Finished Hold until boot process finishes up.
+[  OK  ] Started Dispatcher daemon for systemd-networkd.
+[  OK  ] Finished Terminate Plymouth Boot Screen.
+[  OK  ] Finished GRUB failed boot detection.
+[  OK  ] Started Disk Manager.
+[  OK  ] Started Serial Getty on ttyS0.
+         Starting Set console scheme...
+[  OK  ] Finished Set console scheme.
+[  OK  ] Created slice system-getty.slice.
+[  OK  ] Started Getty on tty1.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Started Modem Manager.
+[  OK  ] Started Snap Daemon.
+         Starting Wait until snapd is fully seeded...
+2023-02-22T05:24:14.026281Z INFO Daemon Azure Linux Agent Version:2.2.46
+2023-02-22T05:24:14.043555Z INFO Daemon OS: ubuntu 20.04
+2023-02-22T05:24:14.056312Z INFO Daemon Python: 3.8.10
+2023-02-22T05:24:14.067173Z INFO Daemon CGroups Status: The cgroup filesystem is ready to use
+2023-02-22T05:24:14.085364Z INFO Daemon Run daemon
+2023-02-22T05:24:14.105178Z INFO Daemon cloud-init is enabled: True
+2023-02-22T05:24:14.111179Z INFO Daemon Using cloud-init for provisioning
+2023-02-22T05:24:14.119075Z INFO Daemon Clean protocol and wireserver endpoint
+2023-02-22T05:24:14.126365Z INFO Daemon Running CloudInit provisioning handler
+2023-02-22T05:24:14.139855Z INFO Daemon Detect protocol endpoints
+2023-02-22T05:24:14.145580Z INFO Daemon Clean protocol and wireserver endpoint
+2023-02-22T05:24:14.152563Z INFO Daemon WireServer endpoint is not found. Rerun dhcp handler
+2023-02-22T05:24:14.159870Z INFO Daemon Test for route to 168.63.129.16
+2023-02-22T05:24:14.169871Z INFO Daemon Route to 168.63.129.16 exists
+2023-02-22T05:24:14.181532Z INFO Daemon Wire server endpoint:168.63.129.16
+2023-02-22T05:24:14.204652Z INFO Daemon Fabric preferred wire protocol version:2015-04-05
+2023-02-22T05:24:14.218524Z INFO Daemon Wire protocol version:2012-11-30
+2023-02-22T05:24:14.229683Z INFO Daemon Server preferred version:2015-04-05
+[  OK  ] Finished Pollinate to seed…seudo random number generator.
+         Starting OpenBSD Secure Shell server...
+[  OK  ] Started OpenBSD Secure Shell server.
+2023-02-22T05:24:14.567507Z INFO Daemon ssh host key found at: /etc/ssh/ssh_host_rsa_key.pub
+2023-02-22T05:24:14.587501Z INFO Daemon Thumbprint obtained from : /etc/ssh/ssh_host_rsa_key.pub
+2023-02-22T05:24:14.604483Z INFO Daemon Finished provisioning
+2023-02-22T05:24:15.633464Z INFO Daemon RDMA capabilities are not enabled, skipping
+2023-02-22T05:24:15.649647Z INFO Daemon Installed Agent WALinuxAgent-2.2.46 is the most current agent
+2023-02-22T05:24:16.031050Z INFO ExtHandler Agent WALinuxAgent-2.2.46 is running as the goal state agent
+2023-02-22T05:24:16.045918Z INFO ExtHandler Distro info: ubuntu 20.04, osutil class being used: UbuntuOSUtil, agent service name: walinuxagent
+2023-02-22T05:24:16.077913Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2023-02-22T05:24:16.096116Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2023-02-22T05:24:16.135229Z INFO ExtHandler Start env monitor service.
+2023-02-22T05:24:16.152719Z INFO ExtHandler Configure routes
+2023-02-22T05:24:16.163785Z INFO ExtHandler Gateway:None
+2023-02-22T05:24:16.172710Z INFO ExtHandler Routes:None
+2023-02-22T05:24:16.181091Z INFO ExtHandler Hostname record does not exist, creating [/var/lib/waagent/published_hostname] with hostname [be2]
+2023-02-22T05:24:16.224303Z WARNING ExtHandler Dhcp client is not running.
+2023-02-22T05:24:16.241648Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2023-02-22T05:24:16.244426Z INFO ExtHandler WALinuxAgent-2.2.46 running as process 949
+2023-02-22T05:24:16.285777Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2023-02-22T05:24:16.299310Z INFO ExtHandler CGroups Status: The cgroup filesystem is ready to use
+2023-02-22T05:24:16.352733Z INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/cpu/system.slice/walinuxagent.service
+2023-02-22T05:24:16.373189Z INFO ExtHandler Started tracking new cgroup: walinuxagent.service, path: /sys/fs/cgroup/memory/system.slice/walinuxagent.service
+2023-02-22T05:24:16.407864Z INFO ExtHandler Route table: [{"Iface": "eth0", "Destination": "0.0.0.0", "Gateway": "192.168.43.1", "Mask": "0.0.0.0", "Flags": "0x0003", "Metric": "100"},{"Iface": "eth0", "Destination": "168.63.129.16", "Gateway": "192.168.43.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "169.254.169.254", "Gateway": "192.168.43.1", "Mask": "255.255.255.255", "Flags": "0x0007", "Metric": "100"},{"Iface": "eth0", "Destination": "192.168.43.0", "Gateway": "0.0.0.0", "Mask": "255.255.255.224", "Flags": "0x0001", "Metric": "0"}]
+2023-02-22T05:24:16.594537Z INFO ExtHandler Initial NIC state: [{ "name": "lo", "link": "<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00" }, { "name": "eth0", "link": "<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 00:22:48:04:a4:84 brd ff:ff:ff:ff:ff:ff" }]
+2023-02-22T05:24:16.736654Z INFO ExtHandler Successfully added Azure fabric firewall rules
+2023-02-22T05:24:16.770304Z INFO ExtHandler Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     tcp  --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       tcp  --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2023-02-22T05:24:16.970253Z INFO ExtHandler Set block dev timeout: sdb with timeout: 300
+2023-02-22T05:24:16.993868Z INFO ExtHandler Set block dev timeout: sda with timeout: 300
+[  OK  ] Created slice Slice for walinuxagent extensions.
+2023-02-22T05:24:17.378417Z INFO ExtHandler Created slice for walinuxagent extensions system-walinuxagent.extensions.slice
+2023-02-22T05:24:17.398475Z INFO ExtHandler WireServer endpoint 168.63.129.16 read from file
+2023-02-22T05:24:17.598996Z INFO ExtHandler Wire server endpoint:168.63.129.16
+2023-02-22T05:24:18.151086Z INFO ExtHandler Agent WALinuxAgent-2.2.46 discovered update WALinuxAgent-2.9.0.4 -- exiting
+2023-02-22T05:24:18.835580Z INFO Daemon Agent WALinuxAgent-2.2.46 launched with command 'python3 -u /usr/sbin/waagent -run-exthandlers' is successfully running
+
+Ubuntu 20.04.5 LTS be2 ttyS0
+
+be2 login: 2023-02-22T05:24:18.863461Z INFO Daemon Determined Agent WALinuxAgent-2.9.0.4 to be the latest agent
+2023-02-22T05:24:19.684727Z INFO ExtHandler ExtHandler The agent will now check for updates and then will process extensions. Output to /dev/console will be suspended during those operations.
+[  OK  ] Started snap.lxd.hook.inst…-4334-87c1-2607fb091956.scope.
+[  OK  ] Listening on Socket unix for snap application lxd.daemon.
+         Starting Service for snap application lxd.activate...
+[  OK  ] Finished Service for snap application lxd.activate.
+[  OK  ] Started snap.lxd.hook.conf…-4385-9085-ae467ef2c145.scope.
+         Starting Time & Date Service...
+[  OK  ] Started Time & Date Service.
+[  OK  ] Finished Wait until snapd is fully seeded.
+         Starting Apply the settings specified in cloud-config...
+         Stopping OpenBSD Secure Shell server...
+[  OK  ] Stopped OpenBSD Secure Shell server.
+         Starting OpenBSD Secure Shell server...
+[  OK  ] Started OpenBSD Secure Shell server.
+[   31.906123] cloud-init[1549]: Cloud-init v. 22.4.2-0ubuntu0~20.04.2 running 'modules:config' at Wed, 22 Feb 2023 05:24:25 +0000. Up 31.27 seconds.
+[  OK  ] Finished Apply the settings specified in cloud-config.
+         Starting Write warning to Azure ephemeral disk...
+[  OK  ] Finished Write warning to Azure ephemeral disk.
+[  OK  ] Reached target Multi-User System.
+[  OK  ] Reached target Graphical Interface.
+         Starting Execute cloud user/final scripts...
+         Starting Update UTMP about System Runlevel Changes...
+[  OK  ] Finished Update UTMP about System Runlevel Changes.
+         Starting Update APT News...
+         Starting Update the local ESM caches...
+[   33.061730] cloud-init[1576]: Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+[   33.078117] cloud-init[1576]: Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+[   33.098091] cloud-init[1576]: Get:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+[   33.107081] cloud-init[1576]: Get:4 http://azure.archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+[   33.472463] cloud-init[1576]: Get:5 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+[   33.850708] cloud-init[1576]: Get:6 http://azure.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+[   34.124559] cloud-init[1576]: Get:7 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+[  OK  ] Finished Update APT News.
+[   34.192867] cloud-init[1576]: Get:8 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+[   34.224626] cloud-init[1576]: Get:9 http://azure.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+[   34.250306] cloud-init[1576]: Get:10 http://azure.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+[   34.275721] cloud-init[1576]: Get:11 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2384 kB]
+[   34.392648] cloud-init[1576]: Get:12 http://azure.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [409 kB]
+[   34.414510] cloud-init[1576]: Get:13 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [16.3 kB]
+[   34.430129] cloud-init[1576]: Get:14 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1610 kB]
+[   34.486939] cloud-init[1576]: Get:15 http://azure.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [227 kB]
+[   34.514983] cloud-init[1576]: Get:16 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1026 kB]
+[  OK  ] Finished Update the local ESM caches.
+[   34.554946] cloud-init[1576]: Get:17 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [239 kB]
+[   34.573424] cloud-init[1576]: Get:18 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [23.6 kB]
+[   34.597316] cloud-init[1576]: Get:19 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [25.2 kB]
+[   34.614049] cloud-init[1576]: Get:20 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7408 B]
+[   34.630250] cloud-init[1576]: Get:21 http://azure.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [604 B]
+[   34.691832] cloud-init[1576]: Get:22 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+[   34.709307] cloud-init[1576]: Get:23 http://azure.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+[   34.726665] cloud-init[1576]: Get:24 http://azure.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+[   34.750277] cloud-init[1576]: Get:25 http://azure.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+[   34.774246] cloud-init[1576]: Get:26 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [24.9 kB]
+[   34.793304] cloud-init[1576]: Get:27 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+[   34.810192] cloud-init[1576]: Get:28 http://azure.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+[   34.830251] cloud-init[1576]: Get:29 http://azure.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+[   35.085488] cloud-init[1576]: Get:30 http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages [2007 kB]
+[   35.129780] cloud-init[1576]: Get:31 http://azure.archive.ubuntu.com/ubuntu focal-security/main Translation-en [327 kB]
+[   35.149423] cloud-init[1576]: Get:32 http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [12.2 kB]
+[   35.150660] cloud-init[1576]: Get:33 http://azure.archive.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1508 kB]
+[   35.214035] cloud-init[1576]: Get:34 http://azure.archive.ubuntu.com/ubuntu focal-security/restricted Translation-en [213 kB]
+[   35.233406] cloud-init[1576]: Get:35 http://azure.archive.ubuntu.com/ubuntu focal-security/universe amd64 Packages [797 kB]
+[   35.253754] cloud-init[1576]: Get:36 http://azure.archive.ubuntu.com/ubuntu focal-security/universe Translation-en [156 kB]
+[   35.269999] cloud-init[1576]: Get:37 http://azure.archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [17.0 kB]
+[   35.290016] cloud-init[1576]: Get:38 http://azure.archive.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [22.9 kB]
+[   35.306215] cloud-init[1576]: Get:39 http://azure.archive.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5488 B]
+[   35.322027] cloud-init[1576]: Get:40 http://azure.archive.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [528 B]
+         Starting PackageKit Daemon...
+[  OK  ] Started PackageKit Daemon.
+[   48.252491] cloud-init[1576]: Fetched 25.7 MB in 6s (4366 kB/s)
+[   49.462006] cloud-init[1576]: Reading package lists...
+[   50.289763] cloud-init[1576]: Reading package lists...
+[   50.485094] cloud-init[1576]: Building dependency tree...
+[   50.494088] cloud-init[1576]: Reading state information...
+[   50.572294] cloud-init[1576]: Calculating upgrade...
+[   50.699455] cloud-init[1576]: The following packages will be upgraded:
+[   50.710134] cloud-init[1576]:   fwupd-signed git git-man grub-efi-amd64-bin grub-efi-amd64-signed
+[   50.726283] cloud-init[1576]:   ubuntu-advantage-tools
+[   50.741412] cloud-init[1576]: 6 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[   50.750679] cloud-init[1576]: Need to get 8556 kB of archives.
+[   50.757748] cloud-init[1576]: After this operation, 24.6 kB of additional disk space will be used.
+[   50.774102] cloud-init[1576]: Get:1 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 ubuntu-advantage-tools amd64 27.13.5~20.04.1 [173 kB]
+[   50.789196] cloud-init[1576]: Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 fwupd-signed amd64 1.51~20.04.1+1.2-3ubuntu0.2 [28.7 kB]
+[   50.799838] cloud-init[1576]: Get:3 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 git-man all 1:2.25.1-1ubuntu3.10 [887 kB]
+[   50.809797] cloud-init[1576]: Get:4 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.10 [4534 kB]
+[   51.323628] cloud-init[1576]: Get:5 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 grub-efi-amd64-signed amd64 1.187.3~20.04.1+2.06-2ubuntu14.1 [1343 kB]
+[   51.353844] cloud-init[1576]: Get:6 http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 grub-efi-amd64-bin amd64 2.06-2ubuntu14.1 [1591 kB]
+[   51.857839] cloud-init[1576]: Preconfiguring packages ...
+[   51.949244] cloud-init[1576]: Fetched 8556 kB in 1s (12.9 MB/s)
+(Reading database ... 58662 files and directories currently installed.)
+[   56.356452] cloud-init[1576]: Preparing to unpack .../0-ubuntu-advantage-tools_27.13.5~20.04.1_amd64.deb ...
+[  OK  ] Stopped Ubuntu Advantage Timer for running repeated jobs.
+[   56.603593] cloud-init[1576]: Unpacking ubuntu-advantage-tools (27.13.5~20.04.1) over (27.13.3~20.04.1) ...
+[   57.632689] cloud-init[1576]: Preparing to unpack .../1-fwupd-signed_1.51~20.04.1+1.2-3ubuntu0.2_amd64.deb ...
+[   57.647953] cloud-init[1576]: Unpacking fwupd-signed (1.51~20.04.1+1.2-3ubuntu0.2) over (1.27.1ubuntu7+1.2-2~20.04.1) ...
+[   57.711378] cloud-init[1576]: Preparing to unpack .../2-git-man_1%3a2.25.1-1ubuntu3.10_all.deb ...
+[   57.726298] cloud-init[1576]: Unpacking git-man (1:2.25.1-1ubuntu3.10) over (1:2.25.1-1ubuntu3.8) ...
+[   57.871806] cloud-init[1576]: Preparing to unpack .../3-git_1%3a2.25.1-1ubuntu3.10_amd64.deb ...
+[   57.950324] cloud-init[1576]: Unpacking git (1:2.25.1-1ubuntu3.10) over (1:2.25.1-1ubuntu3.8) ...
+[   59.364097] cloud-init[1576]: Preparing to unpack .../4-grub-efi-amd64-signed_1.187.3~20.04.1+2.06-2ubuntu14.1_amd64.deb ...
+[   59.380901] cloud-init[1576]: Unpacking grub-efi-amd64-signed (1.187.3~20.04.1+2.06-2ubuntu14.1) over (1.187.2~20.04.2+2.06-2ubuntu14) ...
+[   59.549187] cloud-init[1576]: Preparing to unpack .../5-grub-efi-amd64-bin_2.06-2ubuntu14.1_amd64.deb ...
+[   59.579999] cloud-init[1576]: Unpacking grub-efi-amd64-bin (2.06-2ubuntu14.1) over (2.06-2ubuntu14) ...
+[   59.968166] cloud-init[1576]: Setting up fwupd-signed (1.51~20.04.1+1.2-3ubuntu0.2) ...
+[   59.978291] cloud-init[1576]: Setting up git-man (1:2.25.1-1ubuntu3.10) ...
+[   59.985618] cloud-init[1576]: Setting up ubuntu-advantage-tools (27.13.5~20.04.1) ...
+[  OK  ] Started Ubuntu Advantage Timer for running repeated jobs.
+[   64.921580] cloud-init[1576]: Setting up grub-efi-amd64-bin (2.06-2ubuntu14.1) ...
+[   64.934559] cloud-init[1576]: Setting up grub-efi-amd64-signed (1.187.3~20.04.1+2.06-2ubuntu14.1) ...
+[   65.224996] cloud-init[1576]: Trying to migrate /boot/efi into esp config
+[   65.620322] cloud-init[1576]: Installing grub to /boot/efi.
+[   65.816881] cloud-init[1576]: Installing for x86_64-efi platform.
+[   66.863813] cloud-init[1576]: Installation finished. No error reported.
+[   66.914985] cloud-init[1576]: Setting up git (1:2.25.1-1ubuntu3.10) ...
+[   66.952127] cloud-init[1576]: Processing triggers for man-db (2.9.1-1) ...
+ci-info: no authorized SSH keys fingerprints found for user azureuser.
+<14>Feb 22 05:25:06 cloud-init: #############################################################
+<14>Feb 22 05:25:06 cloud-init: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Feb 22 05:25:06 cloud-init: 1024 SHA256:5rTjLVBM6IPfxJ+veRvG1CL6VpnCy8rmg+mWeSXuSnE root@be2 (DSA)
+<14>Feb 22 05:25:06 cloud-init: 256 SHA256:7ZNCJBk7oK7UehRUSPP8Q0JRqYD/OqEsFxvCiwlaSD0 root@be2 (ECDSA)
+<14>Feb 22 05:25:06 cloud-init: 256 SHA256:iYkEd1cjNopQogwV9InpA9hw6Ilk8+X9/IPhfgPFmXk root@be2 (ED25519)
+<14>Feb 22 05:25:06 cloud-init: 3072 SHA256:LdGAbtDyVFlMET3vEv46BLqC3mZRjPVU/XPEhXUQwb0 root@be2 (RSA)
+<14>Feb 22 05:25:06 cloud-init: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Feb 22 05:25:06 cloud-init: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJrfaF0/yl5/1nC9CEHeOYHMf9oDIjaQzmNBnGPPFovgjjdjoIj1kcGJEE+G7sQElZRSLmtD97kJ8zPjWzv/+Ls= root@be2
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDx3gpuv5aJYOo+ChUmPbbm2Qbiy6X5LqmkgMgJoSTpZ root@be2
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUs7bpeshT5tWrfbtv+9Z9PjMEho/1vS8njErson58IGxeHMQRntV5Nqo6cDcJPG7dYCEx3IeeiKNloXpjCsG96HxKIeiUFNIzZ+2koxyS3h1ZWyyvAlGA+IXps1oMSJVlqwL2EDLQ3AIF6J98jMgToGaTflwhWwdSt+4ajAiur9Yn7GQr7ZJL6pgUSBuJnvgGRdoL3jvT6NjoC6/88NbAQGNUoX+vXSpVBkADTBYRLe5PWhElTUuUYbS/gSZBtBnAFLEAtqSGVtwB73wuN7tNZiuYQFm1XUtsRzusah6XmojHYHbE3yXlWzvBZuVA/1qtP56kREXO8/vuO+h6qMf9NHzLQ5F+shQrzDKPZ9vn/WeqLIc2xyAuTWJXrNhvcgVx8p93ZAmAR6ppekkAzR6Ngz+uiopu3d+GEv8FFN9vQqG7THtl99ZF/e6vcOZHtGV8Je9AqfhqZPyF327XKW8CQtqpfxz01U/Q8iZnbrFHLMkmYRySdCLCktdRbVkKP9s= root@be2
+-----END SSH HOST KEY KEYS-----
+[   71.866628] cloud-init[1576]: Cloud-init v. 22.4.2-0ubuntu0~20.04.2 running 'modules:final' at Wed, 22 Feb 2023 05:24:26 +0000. Up 32.51 seconds.
+[   71.886442] cloud-init[1576]: Cloud-init v. 22.4.2-0ubuntu0~20.04.2 finished at Wed, 22 Feb 2023 05:25:06 +0000. Datasource DataSourceAzure [seed=/dev/sr0].  Up 71.85 seconds
+[  OK  ] Finished Execute cloud user/final scripts.
+[  OK  ] Reached target Cloud-init target.
+{"version":"1.0","timestamp":"2023-02-22T05:30:53Z","vmId":"5d59a26e-840f-450c-9b22-eac689b230bc","hashAlgorithm":"sha256","certificate":"-----BEGIN CERTIFICATE-----\nMIIOnjCCDIagAwIBAgIUO3rsxweuzM6JJoaRitUQrHkGh4IwDQYJKoZIhvcNAQEL\nBQAwFTETMBEGA1UEAxMKQVBDQS1CWTAxUDAeFw0yMzAyMDUxMTI0MzlaFw0yMzA0\nMDYxMzI0MzlaMBkxFzAVBgNVBAMTDkJZMjEwMTAxMTEwNDU1MIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0MSWouo0Wg8F6zyilCeHldM1/UP9PSoC5TnG\nYY31XsoeI/39cpqVkM6xckwlO045z3xit9q65eYe5Yn04xVofpxxHgmbszx0aHgU\nTRCOjI9OslUVW4Pn0f33RE+jONuXVGgorPtjWgr50UNFr60u0l5nxnD1PH5+Ud/7\nYGYs9EisCNPNRrhYfehGveDTlxJ1hxtgJvi81jcMXTMmXEunNS6o1wP4EKWovfgo\nIgEv2iZFlynoamI2PrriT9wk0eUXiLYo0O0m+pMs3k+QCAlHjmRiW1hkdVaySi8N\n3VZ5kXZRrsP+yzz0QvEPtMEbaezb1ATSVLmSbbYEsjGPAJ4IZQIDAQABo4IK4DCC\nCtwwDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBLAwIAYDVR0lAQH/BBYwFAYI\nKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBTJuK4iiQStTm9gpqNIYzXaCWNR\n1DAaBgNVHRIEEzARgg9QdWJsaWNQaWxvdEZpc2gwgZ4GA1UdEQEB/wSBkzCBkIIU\nQlkyMTAxMDExMTA0NTUuQlkwMVCCLUhvc3ROb2RlLkJZQlByZEFwcDAyLUF6Tm9k\nZXMtUHJvZC1CWTAxUC5CWTAxUIJJSG9zdE5vZGUuQXV0b3BpbG90XEF6dXJlTm9k\nZUlkXGMyNjEzNjQ0LTE4ZmQtNDE1ZC04NGZiLWM5YTI0NzlkNjA1Ny5CWTAxUDAf\nBgNVHSMEGDAWgBTg0q/jQE0Q6p2eIqAiXPWA7JOmDzCCCZsGDyqGSIb3FAG+QJN6\njIUGZASCCYYtLS0tLUJFR0lOIENFUlRJRklDQVRFLS0tLS0NCk1JSUd2ekNDQktl\nZ0F3SUJBZ0lUTXdBQUFmekpxR1F3dVNwWWpRQUFBQUFCL0RBTkJna3Foa2lHOXcw\nQkFRc0YNCkFEQ0JnVEVMTUFrR0ExVUVCaE1DVlZNeEV6QVJCZ05WQkFnVENsZGhj\nMmhwYm1kMGIyNHhFREFPQmdOVkJBY1QNCkIxSmxaRzF2Ym1ReEhqQWNCZ05WQkFv\nVEZVMXBZM0p2YzI5bWRDQkRiM0p3YjNKaGRHbHZiakVyTUNrR0ExVUUNCkF4TWlR\nVkFnVW05dmRDQkRaWEowYVdacFkyRjBaU0JCZFhSb2IzSnBkSGtnTWpBeE5EQWVG\ndzB5TWpBek1EVXcNCk5ERTJORGRhRncweU5UQXpNRFV3TkRFMk5EZGFNQlV4RXpB\nUkJnTlZCQU1UQ2tGUVEwRXRRbGt3TVZBd2dnSWkNCk1BMEdDU3FHU0liM0RRRUJB\nUVVBQTRJQ0R3QXdnZ0lLQW9JQ0FRQzJHOWsxYTZEdFkwLzNPam4yd09lcExpVkQN\nCndMYW96a1ZUMjkvSDZZdEFQOHBtWmo2RHliemYwcGE3M3poMGIvY2oraStLMElM\nem94WUFyMjFpTEF5Uml5SGYNCjM3MVNFT3dlSmN4NTVwQ09lYVFFeHRDdFFFY3R4\ncGhCZnNYSmlTWk43a1FkNzhZWGpxTnh1eXdYS3dXK25VMkUNClNvTnY4dFlnUU1p\nTTY5aU9ZdTdBL3FoODdQMFBLZFJJQzJKNnlibTNqeWNCZ01CaDVJS1d3UWRvZkZO\nUzlaTWsNCmhVak4rbUROQW9zeUQ5aDc1TXEyZE53YkoyNjBjbU9jaGNsL2I2bC9F\nckRTdlVxYVZ2anc3bWRwTkd6dmlnenANCmhobGJQKzFRb05JNTgzSWRpem9zdm9l\nRDNWUmhQZHJEK2k3Y0l4YVpsYmkxT3hmSnNNcjMzZ2d1MnM2bWVBZGcNCnNkdTZi\nSkkwSDRwREpxeWtLMjhaMFBwZk5rUHpJRktVS1VRTlg2Y1M0c2JkWXo5bVhkT05V\nMVlrb0FkZ1J5QzQNClZHaGVUTHM3L0JTNko4WHB2aU1tQXNiYStxVUx3VmRhbG9G\nZlozcGQzV2J1eU9nMklFaXg5K20vTlg2dlVGWVMNCnN1YVVrb1VPczhUc1RwbkxP\ncjRpR0NOUStubTk0MFBKMlZBb2Y5Tk8xMUhUcXROVlRtQjRqSld4aEJ0bC90elkN\nCjFySjRLeGtKaFRvdThicHNBeC9ZdmdnNXhHeHoyVVd0WlFvNmNDcCsxYjFGcXZN\nbnM2Y3RqWDJwQzNWQ2VKUFINCjdFUGcvUlJFWU9NbnlWbE9XM0d2MEQwS041dzZL\ncGsxUWdNYkZBSkwybDVJYktCcmFsZGJoVnVhQnNVZkZZc28NCkZCUjBHNW1OWXJ2\ndmlkRkN4UUlEQVFBQm80SUJtVENDQVpVd0hRWURWUjBsQkJZd0ZBWUlLd1lCQlFV\nSEF3SUcNCkNDc0dBUVVGQndNQk1CVUdBMVVkSGdRT01BeWdDakFJZ2dZdVFsa3dN\nVkF3RWdZRFZSMFRBUUgvQkFnd0JnRUINCi93SUJBREFsQmdOVkhSRUVIakFjZ2hw\nQ1dUQXhVQzVRZFdKc2FXTlFhV3h2ZEVacGMyZ3VRVkJEUVRBZEJnTlYNCkhRNEVG\nZ1FVNE5LdjQwQk5FT3FkbmlLZ0lsejFnT3lUcGc4d0h3WURWUjBqQkJnd0ZvQVUv\naHRMQ21DekhyS3MNCjgvZ0ZLOThEWlFHZVZHWXdZd1lEVlIwZkJGd3dXakJZb0Zh\nZ1ZJWlNhSFIwY0RvdkwzZDNkeTV0YVdOeWIzTnYNClpuUXVZMjl0TDNCcmFXOXdj\neTlqY213dlFWQWxNakJTYjI5MEpUSXdRMlZ5ZEdsbWFXTmhkR1VsTWpCQmRYUm8N\nCmIzSnBkSGtsTWpBeU1ERTBMbU55YkRCd0JnZ3JCZ0VGQlFjQkFRUmtNR0l3WUFZ\nSUt3WUJCUVVITUFLR1ZHaDANCmRIQTZMeTkzZDNjdWJXbGpjbTl6YjJaMExtTnZi\nUzl3YTJsdmNITXZZMlZ5ZEhNdlFWQWxNakJTYjI5MEpUSXcNClEyVnlkR2xtYVdO\naGRHVWxNakJCZFhSb2IzSnBkSGtsTWpBeU1ERTBMbU55ZERBTEJnTlZIUThFQkFN\nQ0FZWXcNCkRRWUpLb1pJaHZjTkFRRUxCUUFEZ2dJQkFHOUhWcWV6VHZPOUZqQTB4\nbGhQVEYvL2xLZW8xRCtLcmlmc0J1SnMNClpIQWFZa0M0T3VsR3N4UGZHSUdkWkJB\ndTZ1UVgxb05hakF0bnlLNStqN2U1R01qVmdXb3B6YStOUVptOG1sZW4NCkpLdE15\nSlh1cDNXOWNwc3Qxc0pVUTUxWHFmdm13MUV3Q0pGN2d2UjZ0dHF1ZzZFQWkvTUtk\nNVlhM2FFa2VXWEkNClJubzVIR2tKVVoxL0tMbk1JRzB1TGZCcEwrTVVOMHF1cTdV\nYzNqVG52emVpeWs2cHcxQmlndUk4NGRteDJyKy8NCi9Tc09HL1lyMkRZS1FiYytM\nQWJvRE8wYjZYdFBxRDB6QytjSmdnSXhSTzFiWVlWTmNiSm5zdmZ3a1M0cUhvUXEN\nCm91TzRrYk14VnpWRzBiM2FTWTU5M1JtOUloWmQzcDFVU2RHaU9MRnV5NjVyalUw\nZnBXd1RTOElqNVhBbzEycUUNCkk5N2JBVjVYaCtJaVF3Nk1OSlBGWlluWDJURGxV\nNEFnUVpwQm96Zi91dW92bit6d2dLZEVRUGlJR1VhSE53dkkNCnhPK1JhaWxZV1hq\nUVJCQVlsSlYwNU5WVG41czFHL3VFQXJGejFJb0FwSFFoR0xIbm90RHVRTEt5R2NF\naWFCci8NCkgyczkxMUlMQkp5U2w2blJST3crRlZTQXd2cGJocWRuTUJWeVhiWTVR\ncDJWMFo4Yy9xcWlETi90VzNhaHpXeDMNCi9vMkg0WFAraUJyOXRIS3VqNmcyZzFm\nam42RTd1a2ozQ0NMSHhLcVVKclQ5MHZHMEhxeG5DcFNlZW1jUlpHTTUNCit6NGFP\nWWFWRUp2TkViNXpLWkRkcUs4R1EyeSs5K3U2cnRBSjB0NUVjVk1BOEFpN3dsWkF4\nREl5Y2JCZHlnbUcNCkFsMC8NCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0NCjAN\nBgkqhkiG9w0BAQsFAAOCAgEAcoWqf4Fo3Mq+E3/dmcexnhMQh/RVXcotL083gneS\nt+VJGqhNFiWc5tDQSSdSWT01AcAU5QbeSHk9niBhKj+Al7XLOvxtkj13Sg9+dXqm\n3bXY+p1f+VJ2v0YAIFxdXafvNfV1kcKTgVvce10nKouXWWw87lSJbLk5vcVs9Js3\neccfM+m5rqewMwRdjKIVcaVRHkXkYTqVpOdMtOyHYDTnk8pBrjC0X1t3wwKFVa4l\nnaUNCHtzfcD05qTOQap7shrbKFiGGVNMQz0gzCK3Yj7RbnIHCDm1YN2IAf8Tfs9M\noNtN/Z3vSrIqTVMLuX2IXYbqwWow1m+p/zkK4nc9/vVmcZKLVasN+H40i8bFneLy\nwf3Kk+IBOJCBD1Ps13ww6fgq2v5QrofCpig5ayJ7gNL5Nhk0ZzeUXA5BVgiJTkii\nk8SzlBQpD133+S+dQ8Jlp0w48LBfFFTjcw4vN/lRVNyufC4labbiC1TekaFdH4ex\n6CDE02Oww8fnYjeRhHbGh/tgvB5K8QQnKb2X8avGITjI8w70fCcMhSF4oUf2wuf6\n3vgih7TyN5Uu4Mv5268SUslvXrbZTHG3F51jUp0Z0Zu4+nJmlsqAlQ1GouCdLMVg\nnT4tcz0hKUl3+qjTHpEUd4CwLe7WmxknBsaFykpymoHTu8xZK7WqZm5+JOZU0BRK\n4Es=\n-----END CERTIFICATE-----\n","signature":"jDfET6XHjphcJ6PqjV3OOe21P6L7W6xPpUXHxvDSaOUOweET5FnoqB/EYf4ap33euKWipsnGDeH3MaZnfDrKr+TKr9LoQ3WwNeAn9A4WKiMVhLyGSpBmeu8YNZDmc+S0TDeSnEKVg78DAp5xd4EMYM4hfvoai1VR7Bse+P63IuwZWDdNW8MVVpfsEKCj9mUUdq4iF4gvVN2SpXYseizy1mFyT3iP7fWRfaus4dQFyp7uIqD+McXYwblnUJiS7hRYGyP4Q5Vzqrhu0ZrJ588Oj1li/nZC1Gur+rR1BVJpX+MzfR0whx0YjPdX4pnMfZ2japZP6jdAQ9Zvl49EwUDm4A==","seal":"hRlsLJQwqe0pYTXjCXO9f3CtxGNzR/j2H+snrThhIVQTVelf8bwNH1vVzcxBEOjnLAKTxdI2PgdMjxYt3MdDAKhTM+z8/An544z3/tZDJLDUQmqyITLM3P1oy5Z02ox8FwXbYr+GpTeG6WwPm0XzajUYotC/dSFuHkg6sMkUS3+sz4ef7lwREkc5mkfBd99QFibqoDZEIyAGCGgZ/P612katz3b9PVnUGN8cV5pVVNThvO1WU3Ft2ExWSP+zfoHt8xm95agXMIttzGTCxXfpoCFjl1/qkPjhyobHH8EmgUhAE+7NbWNVhh0BIpG+wq8vwkXBUv0aZtFqx1Cv1AZdgA=="}

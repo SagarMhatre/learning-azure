@@ -1,0 +1,56 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - nginx
+  - nodejs
+  - npm
+write_files:
+  - owner: www-data:www-data
+    path: /etc/nginx/sites-available/default
+    content: |
+      server {
+        listen 80;
+        location / {
+          proxy_pass http://localhost:3000;
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection keep-alive;
+          proxy_set_header Host $host;
+          proxy_cache_bypass $http_upgrade;
+        }
+      }
+  - owner: azureuser:azureuser
+    path: /home/azureuser/myapp/index.js
+    content: |
+      var express = require('express')
+      var app = express()
+      var os = require('os');
+      app.get('/', function (req, res) {
+        res.send('Hello World from Front End host ' + os.hostname() + ' at ' + (new Date().toLocaleString()) + ' !')
+      })
+      app.listen(3000, function () {
+        console.log('Hello world app listening on port 3000!')
+      })
+  - owner: azureuser:azureuser
+    path: /home/azureuser/myapp/job.sh
+    content: |
+      i=0
+      while [ $i -lt 12 ]; do # 12 five-second intervals in 1 minute
+        curl https://catfact.ninja/fact | json_pp >> /home/azureuser/myapp/cat.txt
+        curl http://192.168.43.4 >> /home/azureuser/myapp/backend.txt
+        sleep 5
+        i=$(( i + 1 ))
+      done
+  - owner: azureuser:azureuser
+    path: /home/azureuser/myapp/cleanup.sh
+    content: |
+        rm /home/azureuser/myapp/cat.txt >> /home/azureuser/myapp/cleanup.txt
+        rm /home/azureuser/myapp/backend.txt >> /home/azureuser/myapp/cleanup.txt      
+runcmd:
+  - service nginx restart
+  - cd "/home/azureuser/myapp"
+  - npm init
+  - npm install express -y
+  - nodejs index.js
+  - echo "*/15 * * * * /home/azureuser/myapp/job.sh" >> /etc/crontab
+  - echo "* * * * * /home/azureuser/myapp/cleanup.sh" >> /etc/crontab
